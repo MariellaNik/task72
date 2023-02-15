@@ -17,5 +17,5 @@ function Tags({ tags }) {
       </div>
     );
   }
-  
+  ReactDOM.render(<Tags />, document.getElementById('root'));
   export default Tags;
