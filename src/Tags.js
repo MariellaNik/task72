@@ -1,15 +1,15 @@
 import React from 'react';
 
 // Tags component
-export function Tags({ tags }) {
+function Tags({ tags }) {
     //the Tags component receives a tags prop, which is an array of strings
     const defaultTags = ['boomdotdev', 'task', 'tags', 'react'];
-    const allTags = tags || defaultTags;
+   // const allTags = tags || defaultTags;
     //If the tags prop is not provided, the component will use the default tags specified in the defaultTags array.
   
     return (
       <div className="tags">
-        {allTags.map((tag) => (
+        {defaultTags.map((tag) => (
           <span key={tag} className="tag">
             #{tag}
           </span>
@@ -18,4 +18,4 @@ export function Tags({ tags }) {
     );
   }
   
-  //export default Tags;
+  export default Tags;
