@@ -1,14 +1,13 @@
 import React from "react";
+import Tags from "./Tags";
 import "./App.css";
-import { Tags } from "./Tags";
 
-function App() {
-  const tags = ["boomdotdev", "task", "tags", "react"]
+const App = () => {
   return (
-    <div className="App">
-      <Tags tags={tags} />
+    <div>
+      <Tags tags={["boomdotdev", "task", "tags", "react"]} />
     </div>
   );
-}
+};
 
 export default App;
